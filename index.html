@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Yash Parekh — AI/ML Engineer Portfolio. MSc Artificial Intelligence, De Montfort University. Telecom RAG Chatbot, NeuroScan AI, AI Shopping Assistant.">
+<title>Yash Parekh — AI/ML Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">YP</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-actions">
+    <a href="/cv/Yash_Parekh_CV.pdf" download class="btn-cv">⬇ Download CV</a>
+    <a href="#contact" class="nav-cta">Let's Connect</a>
+  </div>
+  <button class="nav-hamburger" onclick="toggleMenu()">☰</button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#projects" onclick="toggleMenu()">Projects</a>
+  <a href="#experience" onclick="toggleMenu()">Experience</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <a href="/cv/Yash_Parekh_CV.pdf" download class="btn-cv">⬇ Download CV</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-badge"><span class="dot"></span>Open to AI/ML Opportunities — London, UK</div>
+    <h1 class="hero-name">Yash Parekh</h1>
+    <p class="hero-title">AI / ML Engineer · <span>MSc Artificial Intelligence</span></p>
+    <p class="hero-sub">De Montfort University, Leicester, UK</p>
+    <p class="hero-desc">
+      Building production AI systems — RAG pipelines, agentic assistants, and deep learning models —
+      each with real evaluation harnesses and measurable results. Not just demos. Systems.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">🚀 View Projects</a>
+      <a href="/cv/Yash_Parekh_CV.pdf" download class="btn-outline">⬇ Download CV</a>
+      <a href="https://github.com/YashParekh14" class="btn-outline" target="_blank">⭐ GitHub</a>
+    </div>
+    <div class="hero-stats">
+      <div class="h-stat">
+        <span class="h-stat-num counter" data-target="3">0</span>
+        <div class="h-stat-lbl">AI Systems Deployed</div>
+      </div>
+      <div class="h-stat">
+        <span class="h-stat-num">100%</span>
+        <div class="h-stat-lbl">RAG Retrieval Hit Rate</div>
+      </div>
+      <div class="h-stat">
+        <span class="h-stat-num">95.06%</span>
+        <div class="h-stat-lbl">ViT Model Accuracy</div>
+      </div>
+      <div class="h-stat">
+        <span class="h-stat-num counter" data-target="40">0</span>
+        <div class="h-stat-lbl">Tests Written</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header">
+    <div class="section-eye">Who I Am</div>
+    <h2 class="section-title">About Me</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm a software engineer with a full stack background (MERN) now focused fully on <strong>AI and machine learning</strong>. Currently completing <strong>MSc Artificial Intelligence (full-time)</strong> at De Montfort University, Leicester.</p>
+      <p>What separates my work from tutorial projects: I <strong>measure everything</strong>. My RAG chatbot had 83% retrieval hit rate at baseline. I built an eval harness, diagnosed the gaps, augmented the knowledge base, and hit 100%. That's engineering — not demo building.</p>
+      <p>I've deployed AI systems to <strong>AWS EC2</strong>, <strong>Streamlit Cloud</strong>, <strong>Hugging Face Spaces</strong>, and <strong>Vercel</strong> with proper CI/CD pipelines, Docker containers, and observability.</p>
+      <p>📍 <strong>London, UK</strong> · 📞 <strong>+44 7386 488821</strong> · ✉️ <strong>helloyash789@gmail.com</strong></p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-cat">🤖 AI / LLM</div>
+        <div class="skill-items">LangChain · RAG · ChromaDB · Cross-encoder Reranking · Agentic AI · LLM Evaluation · LangSmith · Prompt Engineering</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-cat">🧠 ML / Deep Learning</div>
+        <div class="skill-items">PyTorch · TensorFlow · Vision Transformer · CNN · EfficientNet · NLP · MLflow · Scikit-learn · Grad-CAM</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-cat">💻 Languages & Stack</div>
+        <div class="skill-items">Python · JavaScript · SQL · React · Node.js · FastAPI · MongoDB · PostgreSQL · Express</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-cat">☁️ Cloud & DevOps</div>
+        <div class="skill-items">Docker · GitHub Actions · AWS EC2 · Streamlit · Hugging Face · Vercel · Git · Supabase · Postman</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header">
+    <div class="section-eye">What I've Built</div>
+    <h2 class="section-title">Projects</h2>
+  </div>
+  <div class="projects-wrap">
+
+    <!-- PROJECT 1 — Telecom RAG -->
+    <div class="project-card reveal" id="pc1">
+      <div class="project-images-col">
+        <div class="main-img-wrap">
+          <img class="img-main" id="tm-main" src="images/telecom/slide_01.png" alt="Telecom RAG" onclick="openModal(this.src)">
+          <div class="img-overlay">🔍 Click to enlarge</div>
+        </div>
+        <div class="gallery-grid" id="tm-gallery">
+          <!-- filled by JS -->
+        </div>
+        <div class="gallery-nav">
+          <button onclick="prevSlide('tm')" class="gal-btn">‹</button>
+          <span class="gal-counter" id="tm-counter">1 / 16</span>
+          <button onclick="nextSlide('tm')" class="gal-btn">›</button>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-num">01 / 03</div>
+        <h3 class="project-title">Telecom RAG Chatbot</h3>
+        <p class="project-desc">
+          Production-ready customer support chatbot using Retrieval-Augmented Generation.
+          Retrieves from three knowledge sources with cross-encoder reranking and score-threshold filtering.
+          Built an LLM-as-judge evaluation harness — the results showed data gaps, not algorithm flaws.
+        </p>
+        <div class="project-metrics">
+          <div class="metric-badge">📈 83% → 100% Hit Rate</div>
+          <div class="metric-badge">⚖️ 4.83/5 Faithfulness</div>
+          <div class="metric-badge">🧪 10 Unit Tests</div>
+          <div class="metric-badge">🚀 Live on Streamlit</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">LangChain</span>
+          <span class="tag">ChromaDB</span><span class="tag">GPT-4o-mini</span>
+          <span class="tag">Streamlit</span><span class="tag">Docker</span>
+          <span class="tag">Cross-encoder Reranking</span>
+        </div>
+        <div class="project-links">
+          <a href="https://telecom-rag-elh9qedf8cwdgdxjpcfdva.streamlit.app" class="proj-btn proj-btn-primary" target="_blank">🌐 Live Demo</a>
+          <a href="https://github.com/YashParekh14/Telecom-RAG" class="proj-btn proj-btn-ghost" target="_blank">💻 GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 — NeuroScan -->
+    <div class="project-card reverse reveal" id="pc2">
+      <div class="project-images-col">
+        <div class="main-img-wrap">
+          <img class="img-main" id="ns-main" src="images/neuroscan/slide_01.png" alt="NeuroScan AI" onclick="openModal(this.src)">
+          <div class="img-overlay">🔍 Click to enlarge</div>
+        </div>
+        <div class="gallery-grid" id="ns-gallery"></div>
+        <div class="gallery-nav">
+          <button onclick="prevSlide('ns')" class="gal-btn">‹</button>
+          <span class="gal-counter" id="ns-counter">1 / 16</span>
+          <button onclick="nextSlide('ns')" class="gal-btn">›</button>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-num">02 / 03</div>
+        <h3 class="project-title">NeuroScan AI</h3>
+        <p class="project-desc">
+          Medical AI classifying brain tumors from MRI scans into 4 categories using Vision Transformer.
+          Systematic architecture comparison: frozen ViT underperformed EfficientNet at 75.25%.
+          Unfreezing 4 transformer blocks with AdamW + CosineAnnealingLR: <strong>95.06% accuracy</strong>.
+        </p>
+        <div class="project-metrics">
+          <div class="metric-badge">🎯 95.06% Accuracy</div>
+          <div class="metric-badge">📊 0.9866 AUC-ROC</div>
+          <div class="metric-badge">📈 +19.81% Improvement</div>
+          <div class="metric-badge">🔍 Grad-CAM XAI</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">PyTorch</span><span class="tag">Vision Transformer</span>
+          <span class="tag">FastAPI</span><span class="tag">React</span>
+          <span class="tag">Docker</span><span class="tag">MLflow</span>
+          <span class="tag">Hugging Face</span><span class="tag">Vercel</span>
+        </div>
+        <div class="project-links">
+          <a href="https://brain-tumor-detection-nu-coral.vercel.app" class="proj-btn proj-btn-primary" target="_blank">🌐 Live Demo</a>
+          <a href="https://github.com/YashParekh14/brain-tumor-detection" class="proj-btn proj-btn-ghost" target="_blank">💻 GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 — Shopping -->
+    <div class="project-card reveal" id="pc3">
+      <div class="project-images-col">
+        <div class="main-img-wrap">
+          <img class="img-main" id="sh-main" src="images/shopping/slide_01.png" alt="AI Shopping" onclick="openModal(this.src)">
+          <div class="img-overlay">🔍 Click to enlarge</div>
+        </div>
+        <div class="gallery-grid" id="sh-gallery"></div>
+        <div class="gallery-nav">
+          <button onclick="prevSlide('sh')" class="gal-btn">‹</button>
+          <span class="gal-counter" id="sh-counter">1 / 19</span>
+          <button onclick="nextSlide('sh')" class="gal-btn">›</button>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-num">03 / 03</div>
+        <h3 class="project-title">AI Shopping Assistant</h3>
+        <p class="project-desc">
+          Production agentic shopping assistant with manual ReAct tool loop, dual-database backend
+          (SQLite dev / PostgreSQL prod), GPT-4o vision search, and full CI/CD to AWS EC2.
+          LangChain's built-in agent silently dropped tool results — manual loop fixed it.
+        </p>
+        <div class="project-metrics">
+          <div class="metric-badge">🧪 15 Unit Tests</div>
+          <div class="metric-badge">🤖 15 Behavioural Evals</div>
+          <div class="metric-badge">☁️ AWS EC2 + CI/CD</div>
+          <div class="metric-badge">🔭 LangSmith Traced</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">GPT-4o</span>
+          <span class="tag">LangChain</span><span class="tag">PostgreSQL</span>
+          <span class="tag">Docker</span><span class="tag">AWS EC2</span>
+          <span class="tag">GitHub Actions</span><span class="tag">LangSmith</span>
+        </div>
+        <div class="project-links">
+          <a href="https://ai-shopping-agent-ql2vcdmjectqdwdcvonli2.streamlit.app" class="proj-btn proj-btn-primary" target="_blank">🌐 Live Demo</a>
+          <a href="https://github.com/YashParekh14/AI-shopping-agent" class="proj-btn proj-btn-ghost" target="_blank">💻 GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-header">
+    <div class="section-eye">My Journey</div>
+    <h2 class="section-title">Experience & Education</h2>
+  </div>
+  <div class="timeline">
+    <div class="tl-item reveal-left">
+      <div class="tl-dot">🎓</div>
+      <div class="tl-content">
+        <div class="tl-period">Jan 2025 – Jun 2026</div>
+        <div class="tl-title">MSc Artificial Intelligence (Full-time)</div>
+        <div class="tl-company">De Montfort University · Leicester, UK</div>
+        <div class="tl-desc">Full-time postgraduate AI programme covering machine learning, deep learning, NLP, computer vision, and AI ethics. Building production AI systems alongside academic study.</div>
+      </div>
+    </div>
+    <div class="tl-item reveal-left">
+      <div class="tl-dot">🤖</div>
+      <div class="tl-content">
+        <div class="tl-period">Apr 2026 – May 2026</div>
+        <div class="tl-title">AI/ML Intern</div>
+        <div class="tl-company">NeuronPath · Virtual Internship</div>
+        <div class="tl-desc">Structured AI/ML internship covering supervised learning, model evaluation, and applied NLP. Implemented Python projects using scikit-learn and TensorFlow on real-world datasets.</div>
+      </div>
+    </div>
+    <div class="tl-item reveal-left">
+      <div class="tl-dot">💊</div>
+      <div class="tl-content">
+        <div class="tl-period">Mar 2023 – Jan 2025</div>
+        <div class="tl-title">MERN Stack Developer</div>
+        <div class="tl-company">eVitalRx · Ahmedabad, India</div>
+        <div class="tl-desc">Built RESTful APIs and React UIs for a pharmacy management platform serving pharmacies across India. Owned backend features end-to-end from schema design to production deployment.</div>
+      </div>
+    </div>
+    <div class="tl-item reveal-left">
+      <div class="tl-dot">🎓</div>
+      <div class="tl-content">
+        <div class="tl-period">2017 – 2021</div>
+        <div class="tl-title">BE Information Technology</div>
+        <div class="tl-company">Gandhinagar Institute of Technology · India</div>
+        <div class="tl-desc">Bachelor of Engineering in Information Technology. Foundation in data structures, algorithms, databases, operating systems, and computer networks.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header">
+    <div class="section-eye">Get In Touch</div>
+    <h2 class="section-title">Let's Work Together</h2>
+  </div>
+  <div class="contact-card reveal">
+    <p class="contact-sub">
+      I'm actively looking for <strong>AI/ML Engineer</strong>, <strong>LLM Engineer</strong>, and <strong>Data Scientist</strong> roles in the UK.
+      Open to full-time, contract, and internship opportunities.
+    </p>
+    <div class="contact-grid">
+      <a href="mailto:helloyash789@gmail.com" class="contact-link">
+        <span class="cl-icon">✉️</span>
+        <div>
+          <span class="cl-label">Email</span>
+          <span class="cl-value">helloyash789@gmail.com</span>
+        </div>
+      </a>
+      <a href="tel:+447386488821" class="contact-link">
+        <span class="cl-icon">📞</span>
+        <div>
+          <span class="cl-label">Phone</span>
+          <span class="cl-value">+44 7386 488821</span>
+        </div>
+      </a>
+      <a href="https://linkedin.com/in/yash-parekh1427" class="contact-link" target="_blank">
+        <span class="cl-icon">💼</span>
+        <div>
+          <span class="cl-label">LinkedIn</span>
+          <span class="cl-value">yash-parekh1427</span>
+        </div>
+      </a>
+      <a href="https://github.com/YashParekh14" class="contact-link" target="_blank">
+        <span class="cl-icon">⭐</span>
+        <div>
+          <span class="cl-label">GitHub</span>
+          <span class="cl-value">YashParekh14</span>
+        </div>
+      </a>
+    </div>
+    <a href="/cv/Yash_Parekh_CV.pdf" download class="btn-primary" style="margin-top:32px;display:inline-flex">
+      ⬇ Download My CV
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>Yash Parekh · AI/ML Engineer · London, UK · 2025</p>
+  <p style="margin-top:6px;font-size:12px;opacity:0.4">Built with HTML, CSS, JavaScript · Deployed on Vercel</p>
+</footer>
+
+<!-- IMAGE MODAL -->
+<div class="modal-overlay" id="modal" onclick="closeModal()">
+  <button class="modal-close">✕</button>
+  <img class="modal-img" id="modal-img" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
